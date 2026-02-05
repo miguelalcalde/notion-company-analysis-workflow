@@ -21,8 +21,11 @@ export const INTEGRATION_ENV_VARS: Record<string, Record<string, string>> = {
     RESEND_API_KEY: "RESEND_API_KEY",
     RESEND_FROM_EMAIL: "RESEND_FROM_EMAIL",
   },
+  notion: {
+    NOTION_API_KEY: "NOTION_API_KEY",
+  },
   // Additional integrations will be added at export time
-};
+}
 
 /**
  * Fetch credentials for an integration by its type
@@ -40,20 +43,20 @@ export const INTEGRATION_ENV_VARS: Record<string, Record<string, string>> = {
 export function fetchCredentials(
   integrationType: string
 ): Promise<Record<string, string | undefined>> {
-  const envVarMapping = INTEGRATION_ENV_VARS[integrationType];
+  const envVarMapping = INTEGRATION_ENV_VARS[integrationType]
 
   if (!envVarMapping) {
     console.warn(
       `[Credential Helper] Unknown integration type: ${integrationType}`
-    );
-    return Promise.resolve({});
+    )
+    return Promise.resolve({})
   }
 
-  const credentials: Record<string, string | undefined> = {};
+  const credentials: Record<string, string | undefined> = {}
 
   for (const [credKey, envVarName] of Object.entries(envVarMapping)) {
-    credentials[credKey] = process.env[envVarName];
+    credentials[credKey] = process.env[envVarName]
   }
 
-  return Promise.resolve(credentials);
+  return Promise.resolve(credentials)
 }

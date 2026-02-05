@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@google/genai": "^1.28.0",
+    "@notionhq/client": "^5.9.0",
     "ai": "^5.0.86",
     "next": "16.0.10",
     "openai": "^6.8.0",
