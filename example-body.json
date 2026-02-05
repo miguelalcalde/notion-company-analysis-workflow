@@ -1,0 +1,70 @@
+{
+  "source": {
+    "type": "automation",
+    "automation_id": "2fee06b0-59c4-8034-bdbb-004de54c67a3",
+    "action_id": "2fee06b0-59c4-80ab-aaf5-005a0f5df2e1",
+    "event_id": "8eb860d2-f227-4dc5-86f2-3e4039132926",
+    "attempt": 1
+  },
+  "data": {
+    "object": "page",
+    "id": "2fee06b0-59c4-8095-8e20-c33342778d1c",
+    "created_time": "2026-02-05T18:00:00.000Z",
+    "last_edited_time": "2026-02-05T19:44:00.000Z",
+    "created_by": {
+      "object": "user",
+      "id": "3aee360f-3064-4720-922a-b89d459e61af"
+    },
+    "last_edited_by": {
+      "object": "user",
+      "id": "3aee360f-3064-4720-922a-b89d459e61af"
+    },
+    "cover": null,
+    "icon": null,
+    "parent": {
+      "type": "data_source_id",
+      "data_source_id": "2fee06b0-59c4-80fb-912c-000b9310a919",
+      "database_id": "2fee06b0-59c4-803f-8228-d63151b29fe6"
+    },
+    "archived": false,
+    "in_trash": false,
+    "is_locked": false,
+    "properties": {
+      "Account Name": {
+        "id": "title",
+        "type": "title",
+        "title": [
+          {
+            "type": "text",
+            "text": { "content": "Zara", "link": null },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plain_text": "Zara",
+            "href": null
+          }
+        ]
+      },
+      "Stage": {
+        "id": "Tw_Q",
+        "type": "status",
+        "status": { "id": "W^=X", "name": "Lead", "color": "gray" }
+      },
+      "Industry": { "id": "%3EkCl", "type": "select", "select": null },
+      "Region": { "id": "mGis", "type": "select", "select": null },
+      "Account Owner": { "id": "dxX~", "type": "people", "people": [] },
+      "Website": { "id": "UG%5EB", "type": "url", "url": null },
+      "ARR (k€)": { "id": "%5EuOR", "type": "number", "number": null },
+      "Last Contact": { "id": "_%3Ajr", "type": "date", "date": null },
+      "Notes": { "id": "_%3BVt", "type": "rich_text", "rich_text": [] }
+    },
+    "url": "https://www.notion.so/Zara-2fee06b059c480958e20c33342778d1c",
+    "public_url": null,
+    "request_id": "96b752de-5e6e-4d24-9494-0ea698648248"
+  }
+}

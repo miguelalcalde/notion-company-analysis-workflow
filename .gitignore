@@ -1,0 +1,6 @@
+.vercel
+.env*.local
+.workflow/
+.claude/
+.cursor/
+node_modules/
