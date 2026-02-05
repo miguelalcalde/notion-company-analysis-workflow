@@ -4,6 +4,35 @@ A durable AI workflow that automatically researches and enriches company entries
 
 When a new company is added to your Notion database, this workflow analyzes it using AI, writes a structured research report directly into the Notion page, and extracts key properties (industry, region, website, revenue) to populate your CRM columns.
 
+## Motivation
+
+Most automation tools lock you into a visual-only paradigm — great for getting started, but limiting when you need custom logic, advanced AI prompts, or full control over your integration code.
+
+This demo showcases a different approach: **start no-code, finish with code**. Design your workflow visually in [Workflow Builder](https://workflow-builder.dev), then export it as a fully editable Next.js project where you have maximum flexibility to customize, extend, and deploy on your own terms.
+
+```txt
+┌─────────────────┐      ┌─────────────────────┐      ┌─────────────────────┐
+│                  │      │                     │      │                     │
+│   💡 Idea        │─────▶│  🔨 Workflow Builder │─────▶│  📦 Exported Code   │
+│                  │      │   (no-code)         │      │   (Next.js project) │
+│  "Enrich new     │      │                     │      │                     │
+│   CRM entries    │      │  Drag & drop steps, │      │  Full TypeScript    │
+│   with AI"       │      │  connect Notion +   │      │  source code you    │
+│                  │      │  AI, test & iterate  │      │  own and customize  │
+└─────────────────┘      └─────────────────────┘      └──────────┬──────────┘
+                                                                 │
+                                                                 ▼
+                                                      ┌─────────────────────┐
+                                                      │                     │
+                                                      │  🚀 Production      │
+                                                      │   (Vercel)          │
+                                                      │                     │
+                                                      │  Durable workflows, │
+                                                      │  auto-retries,      │
+                                                      │  runs at scale      │
+                                                      └─────────────────────┘
+```
+
 ## What This Repo Demonstrates
 
 - **Durable Workflows** — Using `"use workflow"` and `"use step"` directives to build fault-tolerant, resumable multi-step orchestrations
